@@ -1,0 +1,109 @@
+.buy {
+  background: $color-white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__inner {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'buy__item1 preform'
+      'buy__item2 preform'
+      'buy__item3 preform';
+    grid-auto-columns: 1fr;
+    gap: 20px 40px;
+    margin-top: 100px;
+  }
+
+  &__item,
+  &__preform {
+    border-radius: 20px;
+    background: $color-light;
+  }
+
+  &__item {
+    padding: 46px 40px;
+    width: 840px;
+    @include flex(flex-start, center);
+  }
+
+  &__div-img {
+    min-width: 90px;
+    min-height: 90px;
+    @include flex(center, center);
+    @include bg;
+  }
+
+  &__item-right {
+    flex-direction: column;
+    margin-left: 71px;
+    @include flex(center, flex-start);
+  }
+
+  &__img {
+    width: 28px;
+    height: 28px;
+  }
+
+  &__title {
+    @include h2-title;
+  }
+
+  &__preform {
+    grid-area: preform;
+    flex-direction: column;
+    padding: 138px 37px;
+    text-align: center;
+    @include flex(center, center);
+  }
+
+  .preform__title {
+    @include h2-title;
+  }
+
+  .preform__text {
+    @include subtitle-medium;
+  }
+
+  .preform__number {
+    @include h2-title;
+  }
+}
+
+@media (max-width: 1300px) {
+  .buy__inner {
+    flex-direction: column;
+    @include flex;
+  }
+
+  .buy__item {
+    align-items: flex-start;
+    padding: 40px;
+    width: 100%;
+  }
+
+  .buy__item-right {
+    margin-left: 25px;
+  }
+
+  .buy__div-img {
+    min-width: 60px;
+    min-height: 60px;
+  }
+
+  .buy__button {
+    padding: 30px 15px;
+  }
+
+  .buy__text {
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .buy__preform {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 40px;
+  }
+}

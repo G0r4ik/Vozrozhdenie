@@ -1,0 +1,170 @@
+.footer {
+  position: relative;
+  background: $color-blue;
+
+  &__row {
+    padding: 40px 0;
+    @include flex(space-between, center);
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    background: hsla(0, 0%, 100%, 0.25);
+    width: 97vw;
+    height: 1px;
+  }
+
+  &__question {
+    @include flex(null, center);
+  }
+
+  &__question-div {
+    flex-direction: column;
+    margin-right: 30px;
+    @include flex(center, center);
+  }
+
+  &__question-b {
+    margin-bottom: 5px;
+    color: $color-white;
+    @include subtitle-bold;
+  }
+
+  &__question-span {
+    color: $color-white;
+    @include text-medium;
+  }
+
+  &__question-btn {
+    border-radius: 79px;
+    background: $color-white;
+    padding: 30px 60px;
+    color: $color-blue;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  &__row-2-div {
+    max-width: 25%;
+    color: $color-white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__top-span {
+    display: block;
+    margin-top: 10px;
+    color: $color-white;
+    @include subtitle-regular;
+  }
+
+  &__row-3-link {
+    margin-right: 80px;
+    color: $color-white;
+    text-decoration: none;
+    @include text-medium;
+  }
+
+  &__socials {
+    @include flex(null, center);
+  }
+
+  &__gototop {
+    border-radius: 5px;
+    background: $color-white;
+  }
+
+  &__gototop-img {
+    padding: 10px 25px;
+  }
+}
+
+.socials__link {
+  margin-right: 20px;
+}
+
+@media (max-width: 1300px) {
+  .footer__top-span {
+    font-size: 14px;
+  }
+
+  .footer__question-btn {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer__question {
+    justify-content: flex-end;
+  }
+
+  .footer__question-div {
+    margin-right: 15px;
+    margin-left: 25px;
+    align-items: flex-end;
+  }
+
+  .footer__question-span {
+    text-align: right;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__row,
+  .footer__question {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__question-div {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .footer__question {
+    margin-top: 25px;
+  }
+
+  .footer__question-b {
+    margin-bottom: 10px;
+  }
+
+  .footer__contacts {
+    align-items: flex-start;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .footer__row-2-div {
+    margin-bottom: 40px;
+    max-width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__row-3-link {
+    margin-right: 0;
+  }
+
+  .footer__row-3-text {
+    margin-bottom: 40px;
+    @include flex(space-between, center);
+  }
+
+  .footer__row3 {
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .footer__socials {
+    @include flex(space-between);
+  }
+
+  .footer__line {
+    width: 100%;
+  }
+}

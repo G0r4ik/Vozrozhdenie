@@ -1,0 +1,22 @@
+.gallery__button-prev {
+  left: 20px;
+}
+
+.gallery__button-next {
+  right: 20px;
+}
+
+.gallery__picture img {
+  width: 100%;
+}
+
+.button-next__img {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

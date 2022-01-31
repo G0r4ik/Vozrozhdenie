@@ -1,0 +1,67 @@
+$color-light: #f2f9ff;
+$color-light-blue: #007fff;
+$color-blue: #002040;
+$color-white: #fff;
+
+// отступ
+
+@mixin flex($jc: flex-start, $ai: flex-start) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin bg {
+  box-shadow: 0 10px 10px hsla(210, 100%, 13%, 0.1),
+    inset 0 2px 0 hsla(0, 0%, 100%, 0.25),
+    inset 0 -2px 0 hsla(210, 100%, 13%, 0.1);
+  border-radius: 79px;
+  background: linear-gradient(180deg, #409fff 0%, $color-light-blue 100%);
+}
+
+@mixin h2-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@mixin subtitle-regular {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@mixin subtitle-bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@mixin border {
+  box-shadow: 0 20px 20px hsla(210, 100%, 25%, 0.05);
+  border-radius: 20px;
+  background: $color-white;
+}
+
+@mixin text-semibold {
+  font-weight: 600;
+  line-height: 20px;
+}
+
+// Удалить
+// 1
+@mixin text-medium {
+  font-weight: 500;
+  line-height: 20px;
+}
+// 1
+@mixin h2-mobile {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+// 1
+@mixin subtitle-medium {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}

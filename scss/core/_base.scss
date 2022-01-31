@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  color: $color-blue;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: $color-light;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  transition: opacity 0.3s;
+}
+
+a {
+  transition: opacity 0.3s;
+}
+
+a:hover,
+button:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+section {
+  margin-bottom: 160px;
+}
+
+.hamburger {
+  display: none;
+  box-shadow: none;
+  padding: 10px 20px;
+  color: $color-white;
+  font-weight: 600;
+
+  @include bg;
+
+  &__span {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: unset;
+    margin-left: 14px;
+    border-top: 2px solid $color-white;
+    border-bottom: 6px double $color-white;
+    width: 14px;
+    height: 2px;
+  }
+}
+
+.button-blue {
+  padding: 30px 60px;
+  color: $color-white;
+  font-weight: 700;
+
+  @include bg;
+
+  &__span {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.button-none-bg {
+  border: 1px solid $color-blue;
+  border-radius: 79px;
+  background: none;
+  padding: 30px 60px;
+  color: $color-blue;
+  font-weight: 500;
+}
+
+.slider__circle {
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 10px hsla(210, 100%, 13%, 0.1);
+  border-radius: 30px;
+  background: hsla(0, 0%, 100%, 0.25);
+  width: 50px;
+  height: 50px;
+
+  @include flex(center, center);
+
+  &__img {
+    padding: 10px;
+  }
+}
+
+.swiper {
+  cursor: grab;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+
+.card {
+  border-radius: 25px;
+}
+
+.h1-title {
+  margin-bottom: 60px;
+  color: $color-blue;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.pages-main {
+  padding-top: 105px;
+}
+
+@media (max-width: 1300px) {
+  .hamburger {
+    @include flex(center, center);
+  }
+}
+
+@media (max-width: 900px) {
+  .slider__circle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 120px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .h1-title {
+    margin-bottom: 40px;
+    padding: 0 15px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+  }
+}

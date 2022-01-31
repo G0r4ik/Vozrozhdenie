@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--favicon -->
+    <!-- Конец favicon -->
+    <meta name="description" content="..." />
+    <meta name="keywords" content="..." />
+    <meta name="author" content="Gor4ik" />
+    <meta name="robots" content="index, follow" />
+    <!-- <link rel="canonical" href="..." /> -->
+    <!-- <link rel="alternate" hreflang="ru" href="https://example.ru/main" /> -->
+    <title>Возрождение</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="logo">
+            <img src="icon/header__logo.svg" alt="logo" class="logo__img" />
+          </a>
+          <button class="hamburger">
+            Меню <span class="hamburger__span"></span>
+          </button>
+          <nav class="header__nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="pages/about.html" class="menu__link">О компании</a>
+              </li>
+              <li class="menu__item">
+                <a href="pages/news.html" class="menu__link">Новости</a>
+              </li>
+              <li class="menu__item">
+                <a href="pages/documents.html" class="menu__link">Документы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+            <div class="phone">
+              <div class="phone__text">
+                <b class="phone__number">+7 982 45-22-67</b>
+                <span class="phone__clock">Пн-Пт. с 8:00 до 19:00</span>
+              </div>
+              <a href="#" class="phone__link-img">
+                <span class="phone__mobile-text">Заказать звонок</span>
+                <img class="phone__img" src="icon/phone-icon.svg" alt="phone" />
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="container">
+        <picture>
+          <source srcset="./img/intro__bg_smartphone2.webp" type="image/webp" />
+          <img
+            src="./img/intro__bg_smartphone2.png"
+            alt="bg"
+            class="intro__smartphone-bg"
+          />
+        </picture>
+        <div class="intro__inner">
+          <h1 class="intro__title">
+            Более <span class="intro__title-decorate">1000</span> комфортных
+            квартир от 2,3 млн рублей в Дзержинском р-не Ярославля
+          </h1>
+          <button class="button-blue intro__blue-btn">
+            Выбрать квартиру
+            <img
+              src="icon/intro__btn.svg"
+              class="intro__btn1-img"
+              alt="intro__btn"
+            />
+          </button>
+          <button class="button-none-bg intro__btn-none-bg">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <div class="advantages__inner">
+          <h1 class="h1-title">Преимущества жизни в ЖК “Возрождение”</h1>
+          <div class="advantages__cards">
+            <div class="advantages__card" tabindex="0">
+              <div class="advantages__visible-content">
+                <picture class="advantages__picture">
+                  <source
+                    srcset="./img/advantages-eco.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="advantages__bg-img"
+                    src="./img/advantages-eco.png"
+                    alt="advantages-eco"
+                  />
+                </picture>
+                <div class="advantages__preview-text">
+                  <img
+                    class="advantages__img"
+                    src="icon/advantages-eco__icon.svg"
+                    alt="preview-img1"
+                  />
+                  <span class="advantages__span">Экология</span>
+                  <img
+                    src="icon/check-mark.svg"
+                    class="advantages__check-mark"
+                    data-advantages-id-btn="1"
+                    alt="check-mark"
+                  />
+                </div>
+              </div>
+              <p class="advantages__text" data-advantages-id="1">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а развитая
+                инфраструктура этой части города будет полностью в Вашем
+                распоряжении Экология
+              </p>
+            </div>
+
+            <div class="advantages__card" tabindex="0">
+              <div class="advantages__visible-content">
+                <picture class="advantages__picture">
+                  <source
+                    srcset="./img/advantages-dzh.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="advantages__bg-img"
+                    src="./img/advantages-dzh.png"
+                    alt="advantages-dzh"
+                  />
+                </picture>
+                <div class="advantages__preview-text">
+                  <img
+                    class="advantages__img"
+                    src="icon/advantages-dzh__icon.svg"
+                    alt="preview-img1"
+                  />
+                  <span class="advantages__span">Доступная стоимость</span>
+                  <img
+                    src="icon/check-mark.svg"
+                    class="advantages__check-mark"
+                    data-advantages-id-btn="2"
+                    alt="check-mark"
+                  />
+                </div>
+              </div>
+              <p class="advantages__text" data-advantages-id="2">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а развитая
+                инфраструктура этой части города будет полностью в Вашем
+                распоряжении Экология
+              </p>
+            </div>
+
+            <div class="advantages__card" tabindex="0">
+              <div class="advantages__visible-content">
+                <picture class="advantages__picture">
+                  <source
+                    srcset="./img/advantages-nadeznost.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="advantages__bg-img"
+                    src="./img/advantages-nadeznost.png"
+                    alt="advantages-nadeznost"
+                  />
+                </picture>
+                <div class="advantages__preview-text">
+                  <img
+                    class="advantages__img"
+                    src="icon/advantages-like__icon.svg"
+                    alt="preview-img1"
+                  />
+                  <span class="advantages__span">Надежность</span>
+                  <img
+                    src="icon/check-mark.svg"
+                    class="advantages__check-mark"
+                    data-advantages-id-btn="3"
+                    alt="check-mark"
+                  />
+                </div>
+              </div>
+              <p class="advantages__text" data-advantages-id="3">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а развитая
+                инфраструктура этой части города будет полностью в Вашем
+                распоряжении Экология
+              </p>
+            </div>
+
+            <div class="advantages__card" tabindex="0">
+              <div class="advantages__visible-content">
+                <picture class="advantages__picture">
+                  <source
+                    srcset="./img/advantages-transport.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="advantages__bg-img"
+                    src="./img/advantages-transport.png"
+                    alt="advantages-transport"
+                  />
+                </picture>
+                <div class="advantages__preview-text">
+                  <img
+                    class="advantages__img"
+                    src="icon/advantages-transport__icon.svg"
+                    alt="preview-img1"
+                  />
+                  <span class="advantages__span">Транспортная доступность</span>
+                  <img
+                    src="icon/check-mark.svg"
+                    class="advantages__check-mark"
+                    data-advantages-id-btn="4"
+                    alt="check-mark"
+                  />
+                </div>
+              </div>
+              <p class="advantages__text" data-advantages-id="4">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а развитая
+                инфраструктура этой части города будет полностью в Вашем
+                распоряжении Экология
+              </p>
+            </div>
+
+            <div class="advantages__card" tabindex="0">
+              <div class="advantages__visible-content">
+                <picture class="advantages__picture">
+                  <source
+                    srcset="./img/advantages-planirovka.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="advantages__bg-img"
+                    src="./img/advantages-planirovka.png"
+                    alt="advantages-planirovka"
+                  />
+                </picture>
+                <div class="advantages__preview-text">
+                  <img
+                    class="advantages__img"
+                    src="icon/advantages-planirovka__icon.svg"
+                    alt="preview-img1"
+                  />
+                  <span class="advantages__span">Разнообразие планировки</span>
+                  <img
+                    src="icon/check-mark.svg"
+                    class="advantages__check-mark"
+                    data-advantages-id-btn="5"
+                    alt="check-mark"
+                  />
+                </div>
+              </div>
+              <p class="advantages__text" data-advantages-id="5">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а развитая
+                инфраструктура этой части города будет полностью в Вашем
+                распоряжении Экология
+              </p>
+            </div>
+
+            <div class="advantages__card" tabindex="0">
+              <div class="advantages__visible-content">
+                <picture class="advantages__picture">
+                  <source
+                    srcset="./img/advantages-infrastruktura.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="advantages__bg-img"
+                    src="./img/advantages-infrastruktura.png"
+                    alt="advantages-infrastruktura"
+                  />
+                </picture>
+                <div class="advantages__preview-text">
+                  <img
+                    class="advantages__img"
+                    src="icon/advantages-infrastruktura__icon.svg"
+                    alt="preview-img1"
+                  />
+                  <span class="advantages__span">Инфраструктура</span>
+                  <img
+                    src="icon/check-mark.svg"
+                    class="advantages__check-mark"
+                    data-advantages-id-btn="6"
+                    alt="check-mark"
+                  />
+                </div>
+              </div>
+              <p class="advantages__text" data-advantages-id="6">
+                Рядом лес, Волга и зоны для отдыха. Шум и пыль не будут вас
+                беспокоить, так как дом находится на второй линии, а развитая
+                инфраструктура этой части города будет полностью в Вашем
+                распоряжении Экология
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="location">
+      <h1 class="h1-title">Инфраструктура и расположение</h1>
+      <iframe
+        class="location__frame"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A32d01e49f75f3117c5de99f0269de0dc3bc7afc71f33feca5c1b33be48a5a768&amp;source=constructor"
+        width="500"
+        height="700"
+        frameborder="0"
+      ></iframe>
+
+      <div class="location__text">
+        <div class="location__item">
+          <img class="location__img" src="icon/location__house.svg" alt="" />
+          <span class="location__span">Школа</span>
+        </div>
+        <div class="location__item">
+          <img class="location__img" src="icon/location__house.svg" alt="" />
+          <span class="location__span">Кинотеатр</span>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="progress">
+      <div class="container">
+        <div class="progress__inner">
+          <h1 class="h1-title">Ход строительства</h1>
+          <div class="progress__list swiper">
+            <div class="progress__list-wrapper swiper-wrapper">
+              <button class="progress__btn progress__btn_active swiper-slide">
+                <b class="progress__btn-b">Литер 1</b>
+                <span class="progress__btn-span"
+                  >Сентябрь 2021 - Декабрь 2022
+                </span>
+              </button>
+              <button class="progress__btn swiper-slide">
+                <b class="progress__btn-b">Литер 2</b>
+                <span class="progress__btn-span">Март 2022- Декабрь 2023 </span>
+              </button>
+              <button class="progress__btn swiper-slide">
+                <b class="progress__btn-b">Литер 3</b>
+                <span class="progress__btn-span">Март 2023 - Декабрь 2024</span>
+              </button>
+              <button class="progress__btn swiper-slide">
+                <b class="progress__btn-b">Литер 4</b>
+                <span class="progress__btn-span">Май 2025 - Май 2026</span>
+              </button>
+            </div>
+          </div>
+          <div class="swiper progress__slider">
+            <div class="swiper-wrapper progress__slider-wrapper">
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img1.png"
+                    alt="progress__img1"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img2.png"
+                    alt="progress__img2"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">5</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Июнь</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img3.png"
+                    alt="progress__img3"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">12</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Июль</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img1.png"
+                    alt="progress__img1"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img2.png"
+                    alt="progress__img2"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img3.png"
+                    alt="progress__img3"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img1.png"
+                    alt="progress__img1"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img2.png"
+                    alt="progress__img2"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img3.png"
+                    alt="progress__img3"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img1.png"
+                    alt="progress__img1"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img2.png"
+                    alt="progress__img2"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img3.png"
+                    alt="progress__img3"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img1.png"
+                    alt="progress__img1"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img2.png"
+                    alt="progress__img2"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+              <div class="card progress__card swiper-slide">
+                <picture>
+                  <source
+                    srcset="./img/progress__img3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/progress__img3.png"
+                    alt="progress__img3"
+                    class="progress__img"
+                  />
+                </picture>
+                <div class="progress__slider-text">
+                  <div class="progress__slider-text-img-div">
+                    <span class="progress__slider-text-span">15</span>
+                    <img
+                      src="icon/progress__photo-icon.svg"
+                      alt="progress__photo-icon"
+                      class="progress__slider-text-img"
+                    />
+                  </div>
+                  <b class="progress__slider-text-b">2021 / Август</b>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-button-prev progress__button-prev slider__circle"
+            >
+              <img
+                src="icon/slider-button-prev.svg"
+                alt="slider-button-prev"
+                class="button-prev__img"
+              />
+            </div>
+            <div
+              class="swiper-button-next progress__button-next slider__circle"
+            >
+              <img
+                src="icon/slider-button-prev.svg"
+                alt="slider-button-prev"
+                class="button-next__img"
+              />
+            </div>
+            <div class="swiper-scrollbar progress__scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="schedule">
+      <div class="container">
+        <div class="schedule__inner">
+          <h1 class="h1-title">График выполнения работ</h1>
+          <div class="table-wrapper">
+            <table class="table" tabindex="0">
+              <tr class="table__head">
+                <th rowspan="3">№ п/п</th>
+                <th rowspan="3" class="table__th-title">
+                  Наименование работ и затрат
+                </th>
+                <th>Сентябрь</th>
+                <th>Октябрь</th>
+                <th>Ноябрь</th>
+                <th>Декабрь</th>
+                <th>Январь</th>
+                <th>Февраль</th>
+                <th>Март</th>
+                <th>Апрель</th>
+                <th>Май</th>
+                <th>Июнь</th>
+                <th>Июль</th>
+                <th>Август</th>
+                <th>Сентябрь</th>
+                <th>Октябрь</th>
+                <th>Ноябрь</th>
+                <th>Декабрь</th>
+              </tr>
+              <tr class="table__head">
+                <td>2021</td>
+                <td>2021</td>
+                <td>2021</td>
+                <td>2021</td>
+                <td>2022</td>
+                <td>2022</td>
+                <td>2022</td>
+                <td>2022</td>
+                <td>2022</td>
+                <td>2022</td>
+                <td>2022</td>
+                <td>2022</td>
+                <td>2022</td>
+                <td>2022</td>
+                <td>2022</td>
+                <td>2022</td>
+              </tr>
+              <tr class="table__head">
+                <td>3</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+              </tr>
+              <tr class="table__tr-title">
+                <td class="table__td-number">2.2.2.</td>
+                <td class="table__td-title" colspan="99">
+                  Надземная часть (общестроительные работы):
+                </td>
+              </tr>
+              <tr>
+                <td>2.2.2.1.</td>
+                <td>Устройство несущих конструкций, в т.ч. лестниц</td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2.2.2.1.</td>
+                <td>Устройство ограждающих конструкций, в т.ч. перегородки</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2.2.2.2.</td>
+                <td>Наружная отделка</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2.2.2.3.</td>
+                <td>Окна, двери, витражи</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2.2.2.4.</td>
+                <td>Входные группы</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2.2.2.5.</td>
+                <td>Устройство ограждающих конструкций, в т.ч. перегородки</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="table__tr-title">
+                <td class="table__td-number">2.2.3.</td>
+                <td class="table__td-title" colspan="99">
+                  Внутренние инженерные системы :
+                </td>
+              </tr>
+              <tr>
+                <td>2.2.3.1.</td>
+                <td>Лифты пассажирские (монтаж, освидетельствование)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2.2.3.2.</td>
+                <td>Водопровод (ХВС,ГВС)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr class="table__tr-title">
+                <td class="table__td-number">2.3.</td>
+                <td class="table__td-title" colspan="99">
+                  Внутриплощадочные инженерные сети
+                </td>
+              </tr>
+              <tr>
+                <td>2.3.1.</td>
+                <td>Водоснабжение, в т.ч. ВЗУ и резервуары</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2.3.2.</td>
+                <td>Электросети, в т.ч. ТП</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+              </tr>
+              <tr>
+                <td>2.3.4.</td>
+                <td>Теплоснабжение</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2.3.5.</td>
+                <td>Электроснабжение и электроосвещение</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2.3.6.</td>
+                <td>Стояки ливнеыой канализации</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2.3.7.</td>
+                <td>Слаботочные системы</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td class="td_active"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="apartment">
+      <div class="container">
+        <div class="apartment__inner">
+          <h1 class="h1-title">Планировка квартир</h1>
+          <div class="apartment__content">
+            <picture class="apartment__picture">
+              <source
+                srcset="./img/appartaments__img1.webp"
+                type="image/webp"
+              />
+              <img
+                class="apartment__img"
+                src="./img/appartaments__img1.png"
+                alt="appartaments__img1"
+              />
+            </picture>
+            <div class="apartment__choose">
+              <div class="apartment__buttons-div">
+                <button
+                  class="apartments__btn_active apartments__btn"
+                  data-apartment-id="1"
+                >
+                  1-комн.
+                </button>
+                <button class="apartments__btn" data-apartment-id="2">
+                  2-комн.
+                </button>
+              </div>
+              <div
+                class="apartment__div-text apartment__div-text_acitve"
+                id="apartment1"
+              >
+                <p class="apartment__text">Однокомнатные квартиры от 23 м2</p>
+                <b class="apartment__price">от 5 400 000 ₽</b>
+              </div>
+              <div class="apartment__div-text" id="apartment2">
+                <p class="apartment__text">Двухкомнатные квартиры от 23 м2</p>
+                <b class="apartment__price">от 12 400 000 ₽</b>
+              </div>
+              <button class="button-blue apartment__pick-up-btn">
+                Подобрать квартиру
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__inner">
+          <h1 class="h1-title">Галерея наших фото</h1>
+          <div class="swiper gallery__slider">
+            <div class="gallery__cards swiper-wrapper">
+              <picture class="card gallery__picture swiper-slide">
+                <source srcset="./img/gallery__img1.webp" type="image/webp" />
+                <img
+                  class="gallery__img"
+                  src="./img/gallery__img1.png"
+                  alt="gallery__img1"
+                />
+              </picture>
+
+              <picture class="card gallery__picture swiper-slide">
+                <source srcset="./img/gallery__img2.webp" type="image/webp" />
+                <img src="./img/gallery__img2.png" alt="gallery__img2" />
+              </picture>
+
+              <picture class="card gallery__picture swiper-slide">
+                <source srcset="./img/gallery__img3.webp" type="image/webp" />
+                <img src="./img/gallery__img3.png" alt="gallery__img3" />
+              </picture>
+
+              <picture class="card gallery__picture swiper-slide">
+                <source srcset="./img/gallery__img1.webp" type="image/webp" />
+                <img src="./img/gallery__img1.png" alt="gallery__img1" />
+              </picture>
+
+              <picture class="card gallery__picture swiper-slide">
+                <source srcset="./img/gallery__img2.webp" type="image/webp" />
+                <img src="./img/gallery__img2.png" alt="gallery__img2" />
+              </picture>
+
+              <picture class="card gallery__picture swiper-slide">
+                <source srcset="./img/gallery__img3.webp" type="image/webp" />
+                <img src="./img/gallery__img3.png" alt="gallery__img3" />
+              </picture>
+            </div>
+
+            <div class="swiper-button-prev gallery__button-prev slider__circle">
+              <img
+                src="icon/slider-button-prev.svg"
+                alt="slider-button-prev"
+                class="button-prev__img"
+              />
+            </div>
+            <div class="swiper-button-next gallery__button-next slider__circle">
+              <img
+                src="icon/slider-button-prev.svg"
+                alt="slider-button-prev"
+                class="button-next__img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="buy">
+      <h1 class="h1-title">Как купить?</h1>
+      <div class="container">
+        <div class="buy__inner">
+          <div class="buy__item">
+            <div class="buy__div-img">
+              <img
+                src="icon/buy__icon-m.svg"
+                alt="buy__icon-m"
+                class="buy__img"
+              />
+            </div>
+            <div class="buy__item-right">
+              <b class="buy__title">Материнский капитал</b>
+              <p class="buy__text">
+                Материнский капитал и другие субсидии в качестве первоначального
+                взноса при покупке жилья в ипотеку или части стоимости квартиры.
+              </p>
+            </div>
+          </div>
+          <div class="buy__item">
+            <div class="buy__div-img">
+              <img
+                src="icon/buy__icon-i.svg"
+                alt="buy__icon-i"
+                class="buy__img"
+              />
+            </div>
+            <div class="buy__item-right">
+              <b class="buy__title">В ипотеку</b>
+              <p class="buy__text">
+                Специальные ставки некоторых категорий граждан: многодетных и
+                военных.
+              </p>
+            </div>
+          </div>
+          <div class="buy__item">
+            <div class="buy__div-img">
+              <img
+                src="icon/buy__icon-o.svg"
+                alt="buy__icon-o"
+                class="buy__img"
+              />
+            </div>
+            <div class="buy__item-right">
+              <b class="buy__title">100% оплата</b>
+              <p class="buy__text">Принимают оплату по безналичному расчету.</p>
+            </div>
+          </div>
+          <div class="buy__preform">
+            <b class="preform__title">Есть вопросы? </b>
+            <p class="preform__text">
+              Закажите бесплатную консультацию или звоните за номером:
+            </p>
+            <p class="preform__number">+7 982 45-22-67</p>
+            <button class="button-blue buy__button">
+              Заказать консультацию
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <h1 class="h1-title feedback__h1">Отзывы наших клиентов</h1>
+      <div class="swiper feedback__slider">
+        <div class="feedback__inner swiper-wrapper">
+          <div class="feedback__item swiper-slide">
+            <div class="feedback__top">
+              <picture>
+                <source srcset="./img/feedback__logo1.webp" type="image/webp" />
+                <img
+                  class="feedback__avatar"
+                  src="./img/feedback__logo1.png"
+                  alt="feedback__logo1"
+                />
+              </picture>
+              <div class="feedback__top-text">
+                <p class="feedback__name">Антон Сергеевич</p>
+                <p class="feedback__where">Страница VK</p>
+              </div>
+            </div>
+            <p class="feedback__bottom">
+              Повседневная практика показывает, что начало повседневной работы
+              по формированию позиции предопределяет высокую востребованность
+              форм воздействия!
+            </p>
+          </div>
+          <div class="feedback__item swiper-slide feedback__item_active">
+            <div class="feedback__top">
+              <picture>
+                <source srcset="./img/feedback__logo2.webp" type="image/webp" />
+                <img
+                  class="feedback__avatar"
+                  src="./img/feedback__logo2.png"
+                  alt="feedback__logo2"
+                />
+              </picture>
+              <div class="feedback__top-text">
+                <p class="feedback__name">Виталий Степанов</p>
+                <p class="feedback__where">Страница VK</p>
+              </div>
+            </div>
+            <p class="feedback__bottom">
+              Современные технологии достигли такого уровня, что внедрение
+              современных методик говорит о возможностях как самодостаточных,
+              так и внешне зависимых концептуальных решений. Диаграммы связей
+              объективно рассмотрены соответствующими инстанциями.
+            </p>
+          </div>
+          <div class="feedback__item swiper-slide">
+            <div class="feedback__top">
+              <picture>
+                <source srcset="./img/feedback__logo3.webp" type="image/webp" />
+                <img
+                  class="feedback__avatar"
+                  src="./img/feedback__logo3.png"
+                  alt="feedback__logo3"
+                />
+              </picture>
+              <div class="feedback__top-text">
+                <p class="feedback__name">Анна Петровна</p>
+                <p class="feedback__where">Страница VK</p>
+              </div>
+            </div>
+            <p class="feedback__bottom">
+              Современные технологии достигли такого уровня, что постоянное
+              информационно-пропагандистское обеспечение нашей деятельности
+              предоставляет широкие возможности для переосмысления
+              внешнеэкономических политик.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <h1 class="h1-title">Наши партнеры</h1>
+        <div class="partners__inner">
+          <div class="partners__img-div">
+            <picture>
+              <source srcset="./img/partners__vtb.webp" type="image/webp" />
+              <img
+                src="./img/partners__vtb.png"
+                alt="vtb"
+                class="partners__img"
+              />
+            </picture>
+          </div>
+          <div class="partners__img-div">
+            <picture>
+              <source srcset="./img/partners__sber.webp" type="image/webp" />
+              <img
+                src="./img/partners__sber.png"
+                alt="sberbank"
+                class="partners__img"
+              />
+            </picture>
+          </div>
+          <div class="partners__img-div">
+            <picture>
+              <source srcset="./img/partners__ros.webp" type="image/webp" />
+              <img
+                src="./img/partners__ros.png"
+                alt="ros"
+                class="partners__img"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__row">
+            <a class="logo" title="Home" href="#">
+              <img src="icon/footer__logo.svg" alt="footer__logo" />
+            </a>
+            <div class="footer__question">
+              <div class="footer__question-div">
+                <b class="footer__question-b">Остались вопросы?</b>
+                <span class="footer__question-span"
+                  >Закажите бесплатную консультацию
+                </span>
+              </div>
+              <button class="footer__question-btn">
+                Заказать консультацию
+              </button>
+            </div>
+          </div>
+          <div class="footer__line"></div>
+          <div class="footer__row footer__contacts">
+            <div class="footer__row-2-div">
+              Телефон: <span class="footer__top-span">+7 982 45-22-67</span>
+            </div>
+            <div class="footer__row-2-div">
+              Ел. почта:
+              <span class="footer__top-span">vozrojdenie@yandex.ru</span>
+            </div>
+            <div class="footer__row-2-div">
+              Адрес офиса:
+              <span class="footer__top-span"
+                >Ярославская обл. Ярославль, Почтовая улица 12/2</span
+              >
+            </div>
+            <div class="footer__row-2-div">
+              Адрес обекта:
+              <span class="footer__top-span">
+                Ярославская обл. Ярославль, рядом с ул. Бабича 10/22</span
+              >
+            </div>
+          </div>
+          <div class="footer__line"></div>
+          <div class="footer__row footer__row3">
+            <div class="footer__row-3-text">
+              <a href="#" class="footer__row-3-link"
+                >Политика конфиденциальности</a
+              >
+              <a href="#" class="footer__row-3-link">Документы</a>
+            </div>
+            <div class="footer__socials">
+              <div>
+                <a href="#" class="socials__link">
+                  <img
+                    src="icon/socials__vk.svg"
+                    alt="vk"
+                    class="socials__img"
+                  />
+                </a>
+                <a href="#" class="socials__link">
+                  <img
+                    src="icon/socials__twitter.svg"
+                    alt="twitter"
+                    class="socials__img"
+                  />
+                </a>
+                <a href="#" class="socials__link">
+                  <img
+                    src="icon/socials__instagram.svg"
+                    alt="instagram"
+                    class="socials__img"
+                  />
+                </a>
+              </div>
+              <button class="footer__gototop" id="btn-top">
+                <img
+                  class="footer__gototop-img"
+                  src="icon/footer__gototop.svg"
+                  alt="gototop"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+    <script src="main.js"></script>
+    <script src="hamburger-menu.js"></script>
+    <script src="modernizr-custom.js"></script>
+  </body>
+</html>

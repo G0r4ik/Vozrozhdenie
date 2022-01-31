@@ -1,0 +1,52 @@
+.location {
+  position: relative;
+
+  &__frame {
+    width: 100%;
+  }
+
+  &__text {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 10px 10px hsla(210, 100%, 13%, 0.1);
+    border-radius: 20px;
+    background: hsla(0, 0%, 100%, 0.75);
+    padding: 40px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    height: 60px;
+    overflow: hidden;
+    @include flex(flex-start, center);
+  }
+
+  &__img {
+    padding-top: 15px;
+  }
+}
+
+//
+
+@media (max-width: 768px) {
+  .location {
+    padding-right: 0;
+    padding-left: 0;
+
+    &__frame {
+      height: 500px;
+    }
+
+    &__text {
+      right: 20px;
+      bottom: 20px;
+      padding: 25px;
+    }
+
+    &__span {
+      display: none;
+    }
+  }
+}

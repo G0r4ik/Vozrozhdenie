@@ -1,0 +1,126 @@
+.webp .intro {
+  background: url('../img/intro__bg.webp') no-repeat center / cover;
+}
+
+.no-webp .intro {
+  background: url('../img/intro__bg.png') no-repeat center / cover;
+}
+
+.intro {
+  min-height: 800px;
+
+  &__inner {
+    padding-top: 310px;
+    max-width: 59%;
+  }
+
+  &__smartphone-bg {
+    display: none;
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  &__title-decorate {
+    position: relative;
+    color: $color-light-blue;
+    font-weight: 700;
+    font-size: 44px;
+  }
+
+  &__title-decorate::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: -10px;
+    background: url('../icon/intro__line.svg') no-repeat;
+    width: 123px;
+    height: 16px;
+  }
+
+  &__blue-btn {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  &__btn1-img {
+    margin-left: 25px;
+    width: 19px;
+    height: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    background-position: 0 0;
+
+    &__inner {
+      padding: 0 20px;
+      padding-bottom: 80px;
+      max-width: none;
+      text-align: center;
+    }
+
+    &__smartphone-bg {
+      display: block;
+      padding-top: 85px;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    &__blue-btn {
+      justify-content: center;
+      margin-right: 0;
+      margin-bottom: 10px;
+      padding-right: 45px;
+      padding-left: 45px;
+      width: 100%;
+    }
+
+    &__btn-none-bg {
+      padding-right: 45px;
+      padding-left: 45px;
+      width: 100%;
+    }
+  }
+
+  .webp .intro {
+    background: none;
+  }
+
+  .no-webp .intro {
+    background: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .intro {
+    padding-right: 0;
+    padding-left: 0;
+
+    &__inner {
+      margin-left: 15px;
+      // padding-top: 150px;
+    }
+
+    &__blue-btn {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .intro__inner {
+    margin-left: 0;
+  }
+}

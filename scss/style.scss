@@ -1,0 +1,24 @@
+@import 'core/config';
+@import 'core/reset';
+@import 'core/base';
+
+@import 'components/header';
+@import 'components/footer';
+
+@import 'pages/index/intro';
+@import 'pages/index/advantages';
+@import 'pages/index/location';
+@import 'pages/index/progress';
+@import 'pages/index/schedule';
+@import 'pages/index/apartment';
+@import 'pages/index/gallery';
+@import 'pages/index/buy';
+@import 'pages/index/feedback';
+@import 'pages/index/partners';
+
+@import 'pages/documents/documents';
+@import 'pages/news/news';
+@import 'pages/about/about';
+
+// sass -w scss/style.scss css/style.css
+// sass -w scss/style.scss css/style.css --style compressed

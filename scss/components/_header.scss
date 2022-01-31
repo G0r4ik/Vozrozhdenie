@@ -1,0 +1,139 @@
+.header {
+  position: absolute;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+  background: hsla(0, 0%, 100%, 0.5);
+  padding: 15px 0;
+  width: 100%;
+
+  &__inner {
+    @include flex(space-between, center);
+  }
+
+  &__nav {
+    @include flex(null, center);
+  }
+}
+
+.menu {
+  margin-right: 30px;
+  @include flex;
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    margin: 0 30px;
+    text-decoration: none;
+    @include text-medium;
+
+    &_acitve {
+      border-bottom: 2px solid $color-blue;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.phone {
+  @include flex(null, center);
+
+  &__text {
+    flex-direction: column;
+    margin-right: 10px;
+    @include flex;
+  }
+
+  &__number {
+    margin-bottom: 2px;
+    @include subtitle-bold;
+  }
+
+  &__clock {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__link-img {
+    width: 40px;
+    height: 40px;
+    @include bg;
+    @include flex(center, center);
+  }
+
+  &__mobile-text {
+    display: none;
+    margin-right: 10px;
+    color: $color-white;
+    @include text-semibold;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header {
+    padding: 10px 20px 0 20px;
+
+    &_white {
+      background: $color-white;
+      padding-bottom: 15px;
+    }
+
+    &__nav {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      flex-direction: column;
+      z-index: 99;
+      box-shadow: 0 20px 20px hsla(210, 100%, 25%, 0.05);
+      background: $color-white;
+      width: 100%;
+
+      &_visible {
+        display: block;
+      }
+    }
+  }
+
+  .logo__img {
+    margin-top: 10px;
+    width: 95%;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    padding: 0;
+
+    &__item {
+      padding: 20px 0;
+    }
+
+    &__link {
+      @include subtitle-regular;
+    }
+  }
+
+  .phone {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    &__text {
+      margin-bottom: 20px;
+    }
+
+    &__mobile-text {
+      display: block;
+    }
+
+    &__link-img {
+      padding: 10px 20px;
+      width: auto;
+      height: auto;
+      text-decoration: none;
+    }
+  }
+}

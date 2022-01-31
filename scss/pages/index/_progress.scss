@@ -1,0 +1,117 @@
+.progress {
+  padding: 0 20px;
+
+  &__list {
+    border-radius: 92px;
+    background: $color-white;
+    padding: 10px;
+  }
+
+  &__list-wrapper {
+    width: 100%;
+  }
+}
+
+.progress__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 72px;
+  background: #f2f2f2;
+  padding: 15px 0;
+
+  &-b {
+    margin-bottom: 5px;
+    color: #bfbfbf;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  &-span {
+    color: #bfbfbf;
+    font-size: 10px;
+  }
+}
+
+.progress__btn_active {
+  background: linear-gradient(180deg, #409fff 0%, $color-light-blue 100%);
+  .progress__btn-b {
+    color: $color-white;
+  }
+
+  .progress__btn-span {
+    color: $color-white;
+  }
+}
+
+.progress__img {
+  margin: 0;
+  border-radius: 25px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.progress__slider {
+  margin-top: 40px;
+}
+
+.progress__card {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.progress__slider-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: $color-light;
+  @include flex(null, center);
+}
+
+.progress__slider-text-img-div {
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  margin-right: 10px;
+  box-shadow: 0 10px 10px hsla(210, 100%, 13%, 0.1);
+  border-radius: 30px;
+  background: hsla(0, 0%, 100%, 0.5);
+  padding: 5px 12px;
+  @include flex(null, center);
+}
+
+.progress__slider-text-span {
+  margin-right: 5px;
+  color: $color-light;
+  @include text-semibold;
+}
+
+.progress__slider-text-b {
+  color: $color-light;
+  @include subtitle-bold;
+}
+
+.swiper-scrollbar {
+  margin-top: 1000px;
+  height: 1px;
+}
+
+.swiper-scrollbar-drag {
+  background: $color-light-blue;
+}
+
+.progress__scrollbar {
+  border-radius: 1px;
+  background: hsla(210, 100%, 50%, 0.25);
+}
+
+@media (max-width: 1300px) {
+  .progress {
+    padding-right: 0;
+    padding-left: 0;
+
+    &__scrollbar {
+      display: none;
+    }
+  }
+}
